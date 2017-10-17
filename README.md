@@ -17,7 +17,7 @@ If you have problem with `setupATLAS` it may be it is not defined for your accou
 
 Then clone this git repository, you can use the folder as working directory
 
-    git clone git@github.com:wiso/StatisticsTutorialATLASItalia17.git
+    git clone https://github.com/wiso/StatisticsTutorialATLASItalia17.git
     cd StatisticsTutorialATLASItalia17
 
 Now let setup additional software as jupyter. We are doing it with a virtualenv, just copy and paste:
@@ -57,9 +57,9 @@ If a collission happens you will find a message as "The port 7695 is already in 
     Copy/paste this URL into your browser when you connect for the first time, to login with a token:
         http://127.0.0.1:7696/?token=30c3334279e1fbafe2780fd5570081f7131339fa645be274
 
-Then open a new console on your machine (not lxplus) and run the command suggested by the output of the previous commands, but change the port in case of collision, as:
+Then open a new console on your machine (not lxplus) and run the command suggested by the output of the previous commands, but change the port in case of collision, and the <lxplus-username>, as:
 
-   ssh -N -f -L 7696:localhost:7696 lxplus085.cern.ch
+   ssh -N -f -L 7696:localhost:7696 <lxplus-username>@lxplus085.cern.ch
 
 Here 7696 is used instead of 7695 because of a collision. The name of machine is different from you, use the one in the output of the command. Answer 'yes' if a question is prompted. The asked password is the lxplus one.
 
