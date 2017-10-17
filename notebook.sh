@@ -12,7 +12,7 @@ if [ -z "$ssh_port" ]; then
 fi
 
 host_name=`hostname -f`
-user_name =`whoami`
+user_name=`whoami`
 
 echo "Tunneling through port $ssh_port from $host_name"
 
@@ -20,7 +20,7 @@ echo "Tunneling through port $ssh_port from $host_name"
 ssh -f -o ExitOnForwardFailure=yes ${host_name} -R ${ssh_port}:localhost:${ssh_port} sleep 30
 
 echo -e "\nRun this command on your client:"
-echo -e "\n  ssh -N -f -L $ssh_port:localhost:$ssh_port $username@$host_name"
+echo -e "\n  ssh -N -f -L $ssh_port:localhost:$ssh_port $user_name@$host_name"
 
 if [ -z `hostname -d` ]; then
     echo "domain is missing from the hostname $host_name, you have to add it"
