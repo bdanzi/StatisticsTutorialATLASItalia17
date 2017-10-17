@@ -67,4 +67,4 @@ Open a browser from your machine and connect to url suggest by the output as (th
 
     http://127.0.0.1:7696/?token=30c3334279e1fbafe2780fd5570081f7131339fa645be274
 
-Then just clic on the right: new -> python2.
+Open the first example "Intro Notebook".
