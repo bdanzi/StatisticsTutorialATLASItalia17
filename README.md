@@ -1,4 +1,4 @@
-# StatisticalTutorialATLASItalia17
+# StatisticsTutorialATLASItalia17
 Very short statistical tutorial (RooFit + RooStats) at ATLAS Italia 2017
 
 ## Setup
@@ -17,8 +17,8 @@ If you have problem with `setupATLAS` it may be it is not defined for your accou
 
 Then clone this git repository, you can use the folder as working directory
 
-    git clone git@github.com:wiso/StatisticalTutorialATLASItalia17.git
-    cd StatisticalTutorialATLASItalia17
+    git clone git@github.com:wiso/StatisticsTutorialATLASItalia17.git
+    cd StatisticsTutorialATLASItalia17
 
 Now let setup additional software as jupyter. We are doing it with a virtualenv, just copy and paste:
 
