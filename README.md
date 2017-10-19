@@ -3,7 +3,7 @@ Very short statistical tutorial (RooFit + RooStats) at ATLAS Italia 2017
 
 ## Setup
 
-We are using lxplus to setup ROOT. Any other machine with a recent version of ROOT should work. We are using Jupyter notebook as interface.
+We are using lxplus to setup ROOT. Any other machine with a recent version of ROOT should work (your laptop with ROOT + python + git + virtualenv). We are using Jupyter notebook as interface.
 
     ssh lxplus
     setupATLAS
@@ -15,7 +15,9 @@ If you have problem with `setupATLAS` it may be it is not defined for your accou
     export ATLAS_LOCAL_ROOT_BASE=/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase
     alias setupATLAS='source ${ATLAS_LOCAL_ROOT_BASE}/user/atlasLocalSetup.sh'
 
-Then clone this git repository, you can use the folder as working directory
+From this point instructions are not specific for lxplus.
+
+Clone this git repository, you can use the folder as working directory
 
     git clone https://github.com/wiso/StatisticsTutorialATLASItalia17.git
     cd StatisticsTutorialATLASItalia17
@@ -33,24 +35,11 @@ This should take a couple of minutes.
 
 ### Create tunnel to your machine
 
-We are not using X-redirection, but Jupyter notebook. Just copy and paste these commands:
-
-
-
-## What to do when relogin
-
-If you close the lxplus session, if you want to relogin you just need to do:
-
-    ssh lxplus
-    setupATLAS
-    lsetup ROOT
-    lsetup git
-    cd StatisticalTutorialATLASItalia17
-    source venv/bin/activate
-
-and then recreate the tunnel. Very important: the number here represent a port which should not be used by others (it is quite usual to find collision), so *use a random number of four digits different from the one here*:
+We are not using X-redirection, but Jupyter notebook and ssh tunnel. Just copy and paste these commands:
 
     ./notebook.sh 7695
+
+Very important: the number here represent a port which should not be used by others (it is quite usual to find collision), so *use a random number of four digits different from the one here*:
 
 If a collission happens you will find a message as "The port 7695 is already in use, trying another port." It is ok, but take note ok the alternative port used in the message as
 
@@ -68,3 +57,16 @@ Open a browser from your machine and connect to url suggest by the output as (th
     http://127.0.0.1:7696/?token=30c3334279e1fbafe2780fd5570081f7131339fa645be274
 
 Open the first example "Intro Notebook".
+
+## What to do when relogin
+
+If you close the lxplus session, if you want to relogin you just need to do:
+
+    ssh lxplus
+    setupATLAS
+    lsetup ROOT
+    lsetup git
+    cd StatisticalTutorialATLASItalia17
+    source venv/bin/activate
+
+and then recreate the tunnel.
