@@ -103,7 +103,7 @@ double confLevel = 0.95;                // confidence level value
 
 std::string  minimizerType = "";                  // minimizer type (default is what is in ROOT::Math::MinimizerOptions::DefaultMinimizerType()
 std::string massValue = "";              // extra string to tag output file of result
-int   printLevel = 0;                    // print level for debugging PL test statistics and calculators
+int   printLevel = -1;                    // print level for debugging PL test statistics and calculators
 
 bool useNLLOffset = false;               // use NLL offset when fitting (this increase stability of fits)
 
@@ -583,7 +583,7 @@ RooStats::HypoTestInvTool::RunInverter(RooWorkspace * w,
 
    std::cout << "Running HypoTestInverter on the workspace " << w->GetName() << std::endl;
 
-   w->Print();
+   //   w->Print();
 
 
    RooAbsData * data = w->data(dataName);
