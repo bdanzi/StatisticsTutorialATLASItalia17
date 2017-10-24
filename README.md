@@ -75,7 +75,7 @@ and then recreate the tunnel.
 
 In the exercises folder you will find some example, some of them need to be completed. The order is:
 
- * [Intro Notebook](exercises/Intro Notebook.ipynb)
+ * [Intro Notebook](exercises/IntroNotebook.ipynb)
  * [CreateWorkspace](exercises/CreateWorkspace.ipynb)
  * [Measurement](exercises/Measurement.ipynb)
  * [Discovery](exercises/Discovery.ipynb)
