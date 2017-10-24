@@ -75,10 +75,10 @@ and then recreate the tunnel.
 
 In the exercises folder you will find some example, some of them need to be completed. The order is:
 
-    * [Intro Notebook](exercises/Intro Notebook.ipynb)
-    * [CreateWorkspace](exercises/CreateWorkspace.ipynb)
-    * [Measurement](exercises/Measurement.ipynb)
-    * [Discovery](exercises/Discovery.ipynb)
-    * [Limit](exercises/Limit.ipynb)
+ * [Intro Notebook](exercises/Intro Notebook.ipynb)
+ * [CreateWorkspace](exercises/CreateWorkspace.ipynb)
+ * [Measurement](exercises/Measurement.ipynb)
+ * [Discovery](exercises/Discovery.ipynb)
+ * [Limit](exercises/Limit.ipynb)
 
 You can have a look to the [solution folder](solution)
