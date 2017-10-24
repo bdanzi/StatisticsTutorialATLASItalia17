@@ -3,7 +3,7 @@ Very short statistical tutorial (RooFit + RooStats) at ATLAS Italia 2017
 
 ## Setup
 
-We are using lxplus to setup ROOT. Any other machine with a recent version of ROOT should work (your laptop with ROOT + python + git + virtualenv). We are using Jupyter notebook as interface.
+We are using lxplus to setup ROOT. Any other machine with a recent version of ROOT should work (your laptop with ROOT + python + git + virtualenv is suggested. With linux you can easily install everything with apt, yum, dnf, ...). We are using Jupyter notebook as interface.
 
     ssh lxplus
     setupATLAS
@@ -29,7 +29,7 @@ Now let setup additional software as jupyter. We are doing it with a virtualenv,
     pip install --upgrade pip
     pip install --upgrade setuptools
     export CC=`which gcc`
-    pip install ipython jupyter
+    pip install ipython jupyter numpy
 
 This should take a couple of minutes.
 
@@ -70,3 +70,15 @@ If you close the lxplus session, if you want to relogin you just need to do:
     source venv/bin/activate
 
 and then recreate the tunnel.
+
+## The exercizes
+
+In the exercises folder you will find some example, some of them need to be completed. The order is:
+
+    * exercises/Intro Notebook.ipynb
+    * exercises/CreateWorkspace.ipynb
+    * exercises/Measurement.ipynb
+    * exercises/Discovery.ipynb
+    * exercises/Limit.ipynb
+
+You can have a look to the solution folder
