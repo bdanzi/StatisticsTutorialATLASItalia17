@@ -35,7 +35,11 @@ This should take a couple of minutes.
 
 ### Create tunnel to your machine
 
-We are not using X-redirection, but Jupyter notebook and ssh tunnel. Just copy and paste these commands:
+If you are using a remote session (lxplus) you need to redirect the output. If you are using a local computer (your pc) just do:
+
+    jupyter notebook
+
+In case you are using a remote session continue to read. We are not using X-redirection, but Jupyter notebook and ssh tunnel. Just copy and paste these commands:
 
     ./notebook.sh 7695
 
